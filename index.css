@@ -1,0 +1,109 @@
+/*  Just to remove arrows from number fields. */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*  css variables for colors  */
+:root{
+    --bg-top-color-: #6943FF;
+    --bg-main-color-: #F4F4F4;
+    --bg-measurement-color-: #FFFFFF;
+    
+    --h1-text-color-: #ffffff;
+    --h2-text-color-: #5A537B;
+    --measurement-text-color-: #353535;
+    
+    --input-border-color-: #B295FF;
+    --convert-btn-text-color-: #3D3D3D;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-main-color-);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: var(--bg-top-color-);
+    color: var(--h1-text-color-);
+    
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#measurement-section{
+    margin-top: 40px;
+    
+    color: var(--measurement-text-color-);
+}
+
+#measurement-section div{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: var(--bg-measurement-color-);
+}
+
+div h2{
+    margin-bottom: 0px;
+    color: var(--h2-text-color-);
+    
+    font-size: 20px;
+}
+
+div p{
+    font-size: 14px;
+}
+
+#input-convert{
+    background: none;
+    border: var(--input-border-color-) solid 2px;
+    border-radius: 5px;
+    color: var(--h1-text-color-);
+    
+    height: 83px;
+    width: 117px;
+    text-align: center;
+    font-size: 58px;
+    font-weight:  800;
+    
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#convert-btn{
+    background: var(--h1-text-color-);
+    color: var(--convert-btn-text-color-);
+    border: none;
+    border-radius: 5px;
+    
+    height: 42px;
+    width: 117px;
+    font-weight: 500;
+}
+
+#convert-btn:hover{
+    background: #CCC1FF;
+    color: #ffffff;
+}
+
+#convert-btn:active{
+    background: var(--h1-text-color-);
+    color: var(--convert-btn-text-color-);
+}
