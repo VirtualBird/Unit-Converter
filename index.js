@@ -19,14 +19,14 @@ function convertBtn()
     feet = floatRoundTo(feet, 3);
     
     /*  Volume conversion   */
-    let liters = inputValue / 0.264;
-    let gallons = inputValue * 0.264;
+    let liters = inputValue * 3.785;
+    let gallons = inputValue / 3.785;
     liters = floatRoundTo(liters, 3);
     gallons = floatRoundTo(gallons, 3);
     
     /*  Mass conversion     */
-    let kilos = inputValue / 2.204;
-    let pounds = inputValue * 2.204;
+    let kilos = inputValue / 2.205;
+    let pounds = inputValue * 2.205;
     kilos = floatRoundTo(kilos, 3);
     pounds = floatRoundTo(pounds, 3)
     
@@ -39,7 +39,6 @@ function convertBtn()
     lengthConversionEl.textContent = lengthStr;
     volumeConversionEl.textContent = volumeStr;
     massConversionEl.textContent = massStr;    
-    
 }
 
 function floatRoundTo(inputNum, decimalPoints)
